@@ -14,7 +14,7 @@
 
   hello.init({
     foursquare: '5MVDM2NR0RKZA3BZSZ044UZNUIUJKA4HB2HY0JW0ZJNLOLTV',
-  }, {redirect_uri: 'https://dl.dropboxusercontent.com/u/4155256/4sq.html'});
+  }, {redirect_uri: 'https://cdn.rawgit.com/unutranyholas/4sq-lists-to-kml/472e75ec/index.html'});
 
   const x2js = new X2JS({
         arrayAccessFormPaths : [
@@ -22,8 +22,6 @@
         ],
         attributePrefix : "$"
       });
-
-  console.log(saveAs);
 
   hello.on('auth.login', (auth) => {
      hello(auth.network).api('me')
